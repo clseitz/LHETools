@@ -1,5 +1,2 @@
 <use name="root"/>
 <bin name="lheReader" file="lheReader.cpp"/>
-<export>
-   <lib name="1"/>
-</export>
