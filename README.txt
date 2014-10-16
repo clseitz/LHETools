@@ -1,6 +1,9 @@
 # To compile this package with scram use
-scram build -j8
+setup CMSSW7x
+cd CMSSW/src
 cmsenv
+scram build -j8
+
 
 # To compile a standalone executable use (alternative -stdlib=libc++)
 clang++ `root-config --cflags --glibs` -std=c++11 -stdlib=libstdc++ bin/lheReader.cpp -o test/lheReader
